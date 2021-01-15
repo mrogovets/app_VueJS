@@ -8,9 +8,9 @@ const App = {
     };
   },
   methods: {
-    inputChangeHandler(event) {
-      this.inputValue = event.target.value;
-    },
+    // inputChangeHandler(event) {
+    //   this.inputValue = event.target.value;
+    // },
     addNewNote() {
       if (this.inputValue !== "") {
         this.notes.push(this.inputValue);
@@ -32,9 +32,8 @@ const App = {
   watch: {
     inputValue(value) {
       if (value.length > 10) {
-        this.inputValue = ""; // 01:15:25
+        this.inputValue = "";
       }
-      console.log("Input value changed", value);
     },
   },
 };
