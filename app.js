@@ -11,6 +11,7 @@ const App = {
     // inputChangeHandler(event) {
     //   this.inputValue = event.target.value;
     // },
+
     addNewNote() {
       if (this.inputValue !== "") {
         this.notes.push(this.inputValue);
